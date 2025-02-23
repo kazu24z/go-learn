@@ -1,0 +1,5 @@
+linters:
+  disable-all: true
+  enable:
+    - gci          # import 整理
+    - unused       # 未使用の変数を検出

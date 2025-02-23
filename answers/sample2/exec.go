@@ -2,6 +2,7 @@ package sample2
 
 import (
 	"fmt"
+
 	"go-learn/registry"
 )
 
