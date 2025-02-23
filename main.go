@@ -2,7 +2,8 @@ package main
 
 import (
     "fmt"
-    "go-learn/answers"
+    "go-learn/registry"
+    _ "go-learn/answers"
     "os"
 )
 
@@ -12,13 +13,13 @@ func main() {
         return
     }
 
-    target := os.Args[1] // 実行時引数からファイル名を取得
+    target := os.Args[1]
 
-    execFunc, exists := answers.ExecMap[target]
+    execFunc, exists := registry.ExecMap[target]
     if !exists {
         fmt.Println("Error: No such Exec function for", target)
         return
     }
 
-    execFunc() // 指定された関数を実行
+    execFunc()
 }
