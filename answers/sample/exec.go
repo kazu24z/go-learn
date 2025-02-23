@@ -7,7 +7,7 @@ import (
 )
 
 func Exec() {
-	fmt.Println("executed from sample.go")
+	fmt.Println("executed from sample/exec.go")
 }
 
 func init() {
