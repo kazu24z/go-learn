@@ -13,3 +13,20 @@
 go run main.go <ディレクトリ名>
 ```
 
+## エイリアスの登録
+answersの下にサブディレクトリを作成できるようにしていますが、都度フルパス入力は面倒です。
+なので、エイリアス登録してコマンド実行できます。
+
+1. main.go > Prefixesにパスとそのエイリアスを登録
+
+```
+var Prefixes = map[string]string{
+    "t-": "tutorial/",
+}
+```
+
+2. 実行
+
+```
+go run main.go t-no1
+```
