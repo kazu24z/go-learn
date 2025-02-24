@@ -10,6 +10,11 @@ import (
 	"go-learn/registry"
 )
 
+// パス入力のエイリアス
+var Prefixes = map[string]string{
+	"t-": "tutorial/",
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: go run main.go <filename>")
@@ -29,11 +34,7 @@ func main() {
 
 // 実行エイリアスを解釈する関数
 func parseAlias(arg string) string {
-	prefixes := map[string]string{
-		"t-": "tutorial/",
-	}
-
-	for alias, replacement := range prefixes {
+	for alias, replacement := range Prefixes {
 		if strings.HasPrefix(arg, alias) {
 			return replacement + strings.TrimPrefix(arg, alias)
 		}
