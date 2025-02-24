@@ -14,6 +14,8 @@ import (
 	_ "go-learn/answers/tutorial/no18"
 	_ "go-learn/answers/tutorial/no19"
 	_ "go-learn/answers/tutorial/no2"
+	_ "go-learn/answers/tutorial/no20"
+	_ "go-learn/answers/tutorial/no21"
 	_ "go-learn/answers/tutorial/no3"
 	_ "go-learn/answers/tutorial/no4"
 	_ "go-learn/answers/tutorial/no5"
