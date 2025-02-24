@@ -9,6 +9,5 @@
     },
     "go.lintTool": "golangci-lint",
     "go.lintOnSave": "package",
-    "go.lintOnChange": true,
     "go.lintFlags": ["--config=${workspaceFolder}/.golangci.yaml", "--fast"]
   }
